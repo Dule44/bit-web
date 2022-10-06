@@ -51,7 +51,7 @@ oneKgGram = 1000;
 //3.
 bananaWeight = 1.2;
 gramWeightBananas = bananaWeight * oneKgGram;
-console.log(gramWeightBananas);
+console.log(gramWeightBananas + "gr");
 
 //4.
 var oneMinSec, anaLate, tomLate, extraSeconds;
@@ -60,9 +60,9 @@ oneMinSec = 60;
 anaLate = 5;
 tomLate = 30;
 extraSeconds = oneMinSec * anaLate;
-console.log(extraSeconds);
+console.log(extraSeconds + "s");
 extraSeconds = oneMinSec * tomLate;
-console.log(extraSeconds);
+console.log(extraSeconds + "s");
 
 //5.
 //1GB = 1000Mb
