@@ -68,8 +68,18 @@ console.log(extraSeconds + "s");
 //1GB = 1000Mb
 //4 GB = 4000Mb
 // 1MB = 1000kb
-// 4000MB = 400000kb
-// 400000MB / 98kb = 40000kb
+// 4000MB = 4000000kb
+// 4000000kb / 98kb = 40000kb
+
+var onGb = 1000;
+var additionalMemory = onGb * 4;
+console.log(additionalMemory + "MB");
+
+var fourThousandMb = 4000000;
+var newsArticlesEachSize = 98;
+var newsArticles = fourThousandMb / newsArticlesEachSize;
+console.log(newsArticles + "KB")
+
 
 //6.
 
