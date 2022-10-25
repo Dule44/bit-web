@@ -1,0 +1,23 @@
+.first_p{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.second_p {
+    text-decoration: overline;
+    text-transform: lowercase;
+}
+
+.paragraf_one{
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.paragraf_two{
+  text-align: right;
+  line-height: 200%;
+}
+
+.paragraf_three {
+    text-align: center;
+}

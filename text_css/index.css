@@ -1,0 +1,62 @@
+
+@font-face {
+    font-family:'Merienda One';
+    src: url(./font/MeriendaOne-Regular.ttf);
+}
+
+body{
+    font-size:20px;
+    font-weight: lighter;
+}
+
+.text_one {
+  font-family: "Arial, Helvetica, sans-serif";
+}
+
+.text_two {
+  font-family:"Franklin Gothic Medium";
+}
+
+.text_three {
+  font-family:"Times New Roman', Times, serif";
+}
+
+.text_four {
+  font-family:"Verdana, Geneva, Tahoma, sans-serif";
+}
+
+.quote_one{
+    font-family:'Gill Sans';
+}
+
+.quote_two{
+    font-family:'Times New Roman';
+}
+
+
+.quote_three{
+    font-family:'Lucida Sans';
+}
+
+
+.quote_four{
+    font-family:'Verdana';
+}
+
+.text_one {
+    font-family:"Merienda One";
+  }
+
+.text_two {
+    font-style: oblique;
+  }  
+  
+.Increase_weight{
+    font-weight:bold;
+    font-style: italic; 
+}
+
+
+
+
+

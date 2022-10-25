@@ -1,0 +1,51 @@
+.paragraf_one {
+    opacity: 50%;
+    color: darkturquoise;
+    background-color: blueviolet;
+    
+}
+
+.paragraf_two {
+    color: rgb(0, 206, 209);
+    background-color: rgb(210, 105, 30,0.5);
+}
+
+.paragraf_three {
+    color: #00ced1;
+    background-color: #7fff00;
+}
+
+.pict_one {
+  opacity: 60%;
+}
+
+
+.pict_two {
+  background-color:hsl(219, 79%, 66%, 0.5);
+}
+
+.col_1 {
+   background-color: aliceblue;
+}
+
+.col_2 {
+    background-color: hotpink;
+}
+
+.col_3{
+    background-color:#00ced1;
+ }
+
+ .col_4 {
+    background-color:rgb(102, 255, 0);
+ }
+
+ .col_5 {
+    background-color:blueviolet;
+ }
+ 
+ 
+
+
+
+

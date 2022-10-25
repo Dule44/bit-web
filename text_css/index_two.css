@@ -1,0 +1,23 @@
+
+
+a{  
+    text-shadow: 2px 2px rgb(100,100,100,);
+    color: white;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited{
+    color: black;
+    
+}
+
+a:hover{
+    color:green;
+}
+
+a:active{
+    color: blue;
+}
