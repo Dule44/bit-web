@@ -1,0 +1,84 @@
+
+@font-face {
+    font-family: "MeriendaOne-Regular";
+    src: url(../text_css/font/MeriendaOne-Regular.ttf);
+}
+
+
+.paragraf_one {
+   background-color: yellow;
+   max-width: 300px;
+   width: 400px;
+   height: 500px;
+   overflow: hidden;
+}
+
+.paragraf_two {
+    background-color: red;
+    max-height: 200px;
+    width: 600px;
+    height: 300px;
+    overflow: scroll;
+}
+
+.paragraf_three {
+  background-color: yellow;
+  border: 5px thick;
+  border-style: dashed;
+}
+
+.paragraf_four {
+    background-color: yellow;
+    border: 5px thick;
+    border: solid green;
+}
+
+.paragraf_five {
+    background-color: yellow;
+    border: 5px thick;
+    border-style: dashed; 
+}
+
+.paragraf_six {
+  background-color: aqua;
+  /* padding: 50px; */
+  width: 300px;
+  margin: 0, 20px, 0, 0;
+  display: inline;
+}
+
+
+.paragraf_seven {
+    background-color: aqua;
+    /* padding: 50px, 0, 0, 0; */
+    width: 400px;
+    display: inline;
+    margin: 0, 20px, 0, 0;
+    display: inline;
+    visibility: hidden;
+}
+
+.paragraf_eight {
+    background-color: aqua;
+    /* padding: 50px; */
+    width: 200px;
+    /* margin: 100px 100px; */
+    margin: 0, 20px, 0, 0;
+    display: inline;
+}
+
+.shadow {
+    width: 960px;
+    text-align: center;
+    margin: auto;
+    padding: 50px 0px 50px 0px;
+    font-family: Fasthand-Regular;
+    color: aquamarine;
+    background-color:blueviolet;
+    -webkit-box-shadow: 32px -22px 61px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 32px -22px 61px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 32px -22px 61px -4px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+}
+
+
