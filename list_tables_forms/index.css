@@ -1,0 +1,48 @@
+#unorderedOne {
+    list-style-type:circle;
+}
+
+#unorderedTwo {
+    list-style-type: square;
+}
+
+#orderedOne {
+list-style-type:upper-alpha;
+}
+
+#orderedTwo {
+   list-style-type:upper-roman; 
+}
+
+#imageMarker {
+    width: 200px;
+    list-style-image: url(../images/Birds4445-modified.png);
+}
+
+.listOne {
+    list-style-position: outside;
+}
+.listTwo {
+    list-style-position: inside;
+}
+
+
+#header{
+    background-color: red;
+}
+
+img {
+    height: 100px;
+}
+
+td {
+  padding: 10px, 0;  
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+.row {
+    background-color: gray;
+}
