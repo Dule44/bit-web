@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 960px;
+    height: 45px;
+    background-color: rgb(193, 57, 43);
+}
+
+nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 7px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+#home {
+    float: right;
+}
+
+#about {
+    float: right;
+}
+
+#contact {
+    float: right;
+}
+
+#blog {
+    float: right;
+}
+
+.main {
+    width: 960px;
+    position: relative;
+}
+
+#div_one {
+    width: 480px;
+    height: 500px;
+    background-color: rgb(239, 96, 38);
+    float: left;
+}
+
+#div_two {
+    width: 480px;
+    height: 500px;
+    background-color: rgb(42, 165, 228);
+    float: left;
+}
+
+img {
+    height: 275px;
+    clear: left;
+    float: left;
+    position: relative;
+    left: 250px;
+    top: -400px;
+}
+
+
+#div_three {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(193, 57, 43);
+    clear: left;
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    top: -260px;
+}
+
+#div_four {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(45, 62, 80);
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    top: -260px;
+}
+
+.align {
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second_list {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(255, 190, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    top: -270px;
+}
+
+.color {
+    color: rgb(34, 62, 75);
+}
+
+#p1 {
+    clear: left;
+    float: left;
+    width: 300px;
+    margin-left: 15px;
+    position: relative;
+    top: -300px;
+}
+
+#p2 {
+    float: left;
+    width: 300px;
+    margin-left: 15px;
+    position: relative;
+    top: -300px;
+}
+
+#div_five {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 190, 0);
+    clear: left;
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    top: -280px;
+}
+
+#div_six {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(39, 174, 97);
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    top: -280px;
+}
+
+#div_seven{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(193, 57, 43);
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    top: -280px;
+}
+
+#p3 {
+    clear: left;
+    float: left;
+    width: 300px;
+    margin-left: 15px;
+    position: relative;
+    top: -270px;
+}
+
+#p4 {
+    float: left;
+    width: 300px;
+    margin-left: 15px;
+    position: relative;
+    top: -270px;
+}
+
+#p5 {
+    float: left;
+    width: 300px;
+    margin-left: 15px;
+    position: relative;
+    top: -270px;
+}
+
+#div_eight{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(45, 62, 80);
+    clear: left;
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    top: -250px;
+}
+
+#div_nine{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(255, 190, 0);
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    top: -250px;
+}
+
+#div_ten{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(39, 174, 97);
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    top: -250px;
+}
+
+#p6 {
+    clear: left;
+    float: left;
+    width: 300px;
+    margin-left: 15px;
+    position: relative;
+    top: -240px;
+}
+
+#p7 {
+    float: left;
+    width: 300px;
+    margin-left: 15px;
+    position: relative;
+    top: -240px;
+}
+
+#p8 {
+    float: left;
+    width: 300px;
+    margin-left: 15px;
+    position: relative;
+    top: -240px;
+}

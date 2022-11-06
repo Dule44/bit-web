@@ -1,0 +1,19 @@
+.image_one {
+  height: 200px;
+  display: block;
+  float: left;
+}
+.image_two {
+  width: 200px;
+  display: block;
+  clear: left;
+  margin: 0 auto;
+}
+
+.image_three {
+  width: 200px;
+  height: 200px;
+  display: block;
+  clear: left;
+  float: right;
+}
