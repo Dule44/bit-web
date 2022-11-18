@@ -1,62 +1,54 @@
-
-
-*{
-    margin: 0;
-
+* {
+  margin: 0;
 }
 
-
 .box {
-    display: flex;
-    padding: 20px;
-	
+  display: flex;
+  padding: 20px;
 }
 
 .div_four {
-    display: flex;
-    background-color: brown;
-    width: 70%;
-    height: 800px;
-    align-items: center;
-    justify-content: center;
-    
+  display: flex;
+  background-color: brown;
+  width: 70%;
+  height: 800px;
+  align-items: center;
+  justify-content: center;
 }
 
 .parent {
-    display: flex;
-    width: 44%;
-    height: 808px;
-    flex-direction: column;
+  display: flex;
+  width: 44%;
+  height: 808px;
+  flex-direction: column;
 }
 
 .div_one {
-    display: flex;
-    box-sizing: border-box;
-    flex-basis: 33%;
-    height: 33.3%;
-    background-color: blue;
-    align-items: center;
-    justify-content: center;
-    
+  display: flex;
+  box-sizing: border-box;
+  flex-basis: 33%;
+  height: 33.3%;
+  background-color: blue;
+  align-items: center;
+  justify-content: center;
 }
 
 .div_two {
-    display: flex;
-    box-sizing: border-box;
-    flex-basis: 33%;
-    height: 33.3%;
-    background-color: red;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+  flex-basis: 33%;
+  height: 33.3%;
+  background-color: red;
+  align-items: center;
+  justify-content: center;
 }
 
 .div_three {
-    display: flex;
-    box-sizing: border-box;
-    flex-basis: 33%;
-    height: 33.3%;
-    background-color: yellow;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+  flex-basis: 33%;
+  height: 33.3%;
+  background-color: yellow;
+  align-items: center;
+  justify-content: center;
 }
-
