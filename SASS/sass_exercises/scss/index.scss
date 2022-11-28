@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+$width: 25%;
+
+@import './colors';
+@import './mixins';
+
+
+.parent {
+    @include flexCenter(column);
+    width: 90%;
+    height: 200px;
+    margin: auto auto;
+    gap: 10px;
+  
+
+  .childOne {
+    @include flexCenter(row);
+    width: $width;
+    height: 200px;
+    background-color: $color-1;
+    color: $font-color;
+  }
+
+  .childTwo {
+    @include flexCenter(row);
+    width: calc(25% + $width);
+    height: 200px;
+    background-color: $color-2;
+    color: $font-color;
+  }
+
+ .childThree{
+    @include flexCenter(row);
+    width: calc($width + 50%);
+    height: 200px;
+    background-color: $color-3;
+    color: $font-color;
+ } 
+}
+
+article {
+    @include flexCenter(row);
+
+    .pOne {
+        display: block;
+        width: 25%;
+        height: 25vh;
+        margin: 20px 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 5px solid $color-1;
+    }
+
+    .pTwo {
+        @extend .pOne;
+        border: 5px dashed $color-2;
+    }
+
+    .pThree {
+        @extend .pOne;
+        border: 5px dotted $color-3;
+    }
+}
