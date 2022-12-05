@@ -4,34 +4,21 @@
   box-sizing: border-box;
 }
 
+@import "./colors";
+@import "./fonts";
+@import "./mixins";
+
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: black;
-}
-
-
-
-@font-face {
-  font-family: "Roboto-regular";
-  src: url(./assets/fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Roboto-thin";
-  src: url(./assets/fonts/Roboto-Thin.ttf);
-}
-
-@font-face {
-  font-family: "Roboto-light";
-  src: url(./assets/fonts/Roboto-Light.ttf);
+  color: $color-black;
 }
 
 body {
-  font-family: "Roboto-regular";
+  font-family: "Roboto Regular";
 }
 
 h2 {
@@ -51,10 +38,7 @@ p {
   font-size: 16px;
 }
 
-
-
 /* Section One */
-
 
 .container {
   max-width: 1200px;
@@ -67,13 +51,10 @@ p {
 }
 
 .navbar {
+  @include flexCenter(row, space-between, center);
   width: 100%;
   padding: 15px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position:absolute;
+  position: absolute;
   left: 0;
   right: 0;
 }
@@ -82,14 +63,14 @@ p {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
-  color: white;
+  color: $color-white;
 }
 
 .logo-orange {
-  color: orange;
-  border-top: 2px solid white;
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
+  color: $color-orange;
+  border-top: 2px solid $color-white;
+  border-left: 2px solid $color-white;
+  border-bottom: 2px solid $color-white;
   padding-left: 5px;
   font-weight: 700;
 }
@@ -105,78 +86,60 @@ p {
 }
 
 .nav-link a {
-  color: white;
+  color: $color-white;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
 }
 
-a:hover{
-    color: orange;
-    transition: 0.2s;
-    
-  }
-
-
-        
+a:hover {
+  color: $color-orange;
+  transition: 0.2s;
+}
 
 .h1-section {
-  background-image: url(./assets/images/banner3.jpg);
+  @include flexCenter(row, center, center);
+  background-image: url(../assets/images/banner3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
   height: 60vh;
 }
 
 .h1-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(column, center, center);
 }
 
 .main-h1 {
-  color: white;
+  color: $color-white;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 40px;
 }
 
 .btn-button {
-  color: white;
-  background-color: #0263bd;
+  color: $color-white;
+  background-color: $button-background;
   padding: 12px 20px;
   border-radius: 50px;
   border-width: 0;
   margin-top: 20px;
   cursor: pointer;
 }
-
 /* ---------------------------------- */
-
 
 /* Section Two */
 
 .sec-one-flex {
+  @include flexCenter(column, center, center);
   max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 15px;
 }
 
 .title-sec-one {
+  @include flexCenter(column, center, center);
   width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .title-sec-one h2 {
@@ -196,13 +159,13 @@ a:hover{
 .left {
   height: 1px;
   width: 100%;
-  background-color: black;
+  background-color: $color-black;
 }
 
 .square {
   min-width: 15px;
   min-height: 15px;
-  border: 1px solid black;
+  border: 1px solid $color-black;
   transform: rotate(45deg);
   margin: 0 10px;
 }
@@ -210,20 +173,18 @@ a:hover{
 .right {
   height: 1px;
   width: 100%;
-  background-color: black;
+  background-color: $color-black;
 }
 
 .flex-div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   grid-area: 1/1/3/3;
 }
 
 .blue-txt {
-  color: #498ec4;
+  color: $color-txt;
 }
-
 
 .div-one {
   display: flex;
@@ -233,7 +194,7 @@ a:hover{
 }
 
 .flex-div p {
-  font-family: Roboto-light;
+  font-family: "Roboto Light";
   font-size: 14px;
 }
 
@@ -250,17 +211,17 @@ a:hover{
 
 .arrow-list {
   padding-left: 17px;
-  font-family: roboto-thin;
+  font-family: "Roboto Light";
   font-size: 14px;
 }
 
 .arrow-link {
-  list-style: url(./assets/images/arrow_bullet.png);
+  list-style: url(../assets/images/arrow_bullet.png);
   padding-top: 15px;
 }
 
-.par-txt{
-  line-height: 1.7
+.par-txt {
+  line-height: 1.7;
 }
 
 /* --------------------------------------------------- */
@@ -268,10 +229,7 @@ a:hover{
 /* Section Three */
 
 .sec-two-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(column, center, center);
   gap: 15px;
 }
 
@@ -282,39 +240,32 @@ a:hover{
 }
 
 .testimonial-wrapper {
-  background-color: #82c3f5;
+  background-color: $home-blue;
   padding: 30px;
   max-width: 400px;
 }
 
 .testimonial-wrapper p {
-  color: white;
+  color: $color-white;
   font-size: 14px;
   line-height: 2;
 }
 
 .img-circle {
-  border: 1px solid white;
+  border: 1px solid $color-white;
   padding: 3px;
   border-radius: 100%;
   width: 80px;
 }
 
 .img-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  @include flexCenter(row, flex-start, center);
   gap: 25px;
 }
 
-.fa{
-  color: white;
+.fa {
+  color: $color-white;
 }
-
-
-
-
 
 /* --------------------------------------------- */
 
@@ -325,11 +276,8 @@ a:hover{
 }
 
 .sec-three-flex {
+  @include flexCenter(column, center, center);
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 
@@ -344,17 +292,14 @@ a:hover{
 }
 
 .contact-card {
+  @include flexCenter(column, flex-start, center);
   width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  color: $color-white;
   padding: 20px;
 }
 
 .contact-card h3 {
-  color: white;
+  color: $color-white;
   text-transform: uppercase;
   font-weight: 300;
   padding: 35px;
@@ -365,7 +310,7 @@ a:hover{
 }
 
 .contact-us {
-  background-color: #3bdd9a;
+  background-color: $contact-green;
 }
 
 .img-num {
@@ -376,7 +321,7 @@ a:hover{
 }
 
 .connect-us {
-  background-color: #fd5282;
+  background-color: $connect-red;
 }
 
 .soc-icons-wrapper {
@@ -386,26 +331,22 @@ a:hover{
 }
 
 .address {
-  background-color: #376de4;
+  background-color: $address-blue;
 }
 
 .home {
-  background-color: #82c3f5;
+  background-color: $home-blue;
 }
 
 .home img {
   width: 200px;
 }
-
 /* --------------------------------------------- */
 
 /* Section Five */
 
 .sec-four-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(column, center, center);
 }
 
 .form-wrapper {
@@ -414,31 +355,28 @@ a:hover{
 }
 
 form {
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 form button {
   display: block;
   align-self: flex-start;
   padding: 10px 20px;
-  background-color: #fd9727;
+  background-color: $form-butoon;
   border: none;
-  color: white;
+  color: $color-white;
   cursor: pointer;
 }
 
 .input-wrapper {
   /* width: 100%; */
-  display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  align-items: center;
+  @include flexCenter(row, stretch, center);
   gap: 15px;
 }
 
@@ -456,35 +394,31 @@ textarea {
 /* Section six */
 
 .main-footer {
-  background-color: #212121;
-  color: white;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+    @include flexCenter(column, center, center);
+    background-color: $footer-color;
+    color: white;
+    padding: 40px;
+    gap: 20px;
+  }
 
-.main-footer p {
-  font-size: 14px;
-}
+  .main-footer p {
+    font-size: 14px;
+  }
 
-.footer-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-.footer-nav a {
-  color: white;
-  font-size: 14px;
-}
+  .footer-nav {
+    @include flexCenter(row, center, center);
+    gap: 15px;
+  }
 
-/* --------------------------------- */
+  .footer-nav a {
+    color: $color-white;
+    font-size: 14px;
+  }
+
+  /* --------------------------------- */
 
 /* For Tablet Devices */
+
 
 @media only screen and (max-width: 767px) {
   .main-h1 {
@@ -521,82 +455,80 @@ textarea {
 /* For Mobile Devices */
 
 @media only screen and (max-width: 480px) {
-  .navbar {
-    position: relative;
-    flex-direction: column;
-  }
-
-  .nav-links {
-    width: 100%;
-  }
-
-  .nav-links-wrapper {
-    background-color: #7fc2f7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    gap: 15px;
-    width: 100%;
-  }
-
-  .logo-text {
-    color: #757575;
-  }
-
-  .logo-orange {
-    border-top: 4px solid #757575;
-    border-left: 4px solid #757575;
-    border-bottom: 4px solid #757575;
-  }
-
-  .h1-section {
-    height: 40vh;
-  }
-
-  .main-h1 {
-    font-size: 30px;
-  }
-
-  /* --------------------------------------- */
-
-  .flex-div {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .div-two img {
-    max-width: 100%;
-  }
-
-  /* ----------------------------------------- */
-
-  .testimonials {
-    display: flex;
-    flex-direction: column;
-  }
-  /* -------------------------------------------- */
-
-  .input-wrapper {
-    flex-direction: column;
+    .navbar {
+      position: relative;
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      width: 100%;
+    }
+  
+    .nav-links-wrapper {
+     @include flexCenter(column, center, center);  
+      background-color: $nav-color;
+      padding: 15px 0;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      gap: 15px;
+      width: 100%;
+    }
+  
+    .logo-text {
+      color: $logo-border;
+    }
+  
+    .logo-orange {
+      border-top: 4px solid $logo-border;
+      border-left: 4px solid $logo-border;
+      border-bottom: 4px solid $logo-border;
+    }
+  
+    .h1-section {
+      height: 40vh;
+    }
+  
+    .main-h1 {
+      font-size: 30px;
+    }
+  
+    /* --------------------------------------- */
+  
+    .flex-div {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .div-two img {
+      max-width: 100%;
+    }
+  
+    /* ----------------------------------------- */
+  
+    .testimonials {
+      display: flex;
+      flex-direction: column;
+    }
+    /* -------------------------------------------- */
+  
+    .input-wrapper {
+      flex-direction: column;
+    }
+    
+    /*bof iphone fix */
+    .contact-card {
+        padding: 10px;
+    }
+    
+    .connect .contact-card  h3 {
+      padding: 10px 10px 30px 10px;
+    }
+    
+    .connect .contact-card.home img {
+      width: 100%;
+    }
+    /*eof iphone fix */
+  
   }
   
-  /*bof iphone fix */
-  .contact-card {
-      padding: 10px;
-  }
-  
-  .connect .contact-card  h3 {
-    padding: 10px 10px 30px 10px;
-  }
-  
-  .connect .contact-card.home img {
-    width: 100%;
-  }
-  /*eof iphone fix */
-
-}
