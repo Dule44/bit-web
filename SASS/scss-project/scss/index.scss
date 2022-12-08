@@ -119,13 +119,7 @@ a:hover {
 }
 
 .btn-button {
-  color: $color-white;
-  background-color: $button-background;
-  padding: 12px 20px;
-  border-radius: 50px;
-  border-width: 0;
-  margin-top: 20px;
-  cursor: pointer;
+  @include button();
 }
 /* ---------------------------------- */
 
@@ -163,11 +157,7 @@ a:hover {
 }
 
 .square {
-  min-width: 15px;
-  min-height: 15px;
-  border: 1px solid $color-black;
-  transform: rotate(45deg);
-  margin: 0 10px;
+  @include square();
 }
 
 .right {
@@ -177,9 +167,7 @@ a:hover {
 }
 
 .flex-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-area: 1/1/3/3;
+  @include gridOne();
 }
 
 .blue-txt {
@@ -234,9 +222,7 @@ a:hover {
 }
 
 .testimonials {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  @include gridTwo();
 }
 
 .testimonial-wrapper {
@@ -355,20 +341,14 @@ a:hover {
 }
 
 form {
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    gap: 20px;
+    @include form();
 }
 
 form button {
   display: block;
   align-self: flex-start;
   padding: 10px 20px;
-  background-color: $form-butoon;
+  background-color: $form-button;
   border: none;
   color: $color-white;
   cursor: pointer;
