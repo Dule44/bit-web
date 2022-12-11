@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav -->
+      <nav class="navbar sticky-top navbar-expand-md bg-danger">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link text-light active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-light active">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-light active">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-light active">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- carousel -->
+      <section class="col-md-12 m-1 hero">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/152655711/original/909c3cab9b1ef397e8e8dac977b51ac3bb8d0d4e/build-your-responsive-website-using-html-css-js-and-php.png" class="d-block w-100" alt="...">    
+            </div>
+            <div class="carousel-item">
+              <img src="https://wallpapercave.com/wp/wp7420966.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/178977443/original/d6e1c5df8a04b98430b372cbd8441428bb1bd921/convert-your-psd-xd-figma-template-to-html-and-css.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- grid -->
+      <main class="container">
+        <div class="row g-4">
+          <div class="col-4">
+            <div
+              class="d-flex align-items-center justify-content-center bg-danger text-light"
+              style="height: 200px"
+            >
+              <p>300 x 200</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="col-4">
+            <div
+              class="d-flex align-items-center justify-content-center bg-dark text-light"
+              style="height: 200px"
+            >
+              <p>300 x 200</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="col-4">
+            <div class="bg-warning">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://slack.engineering/rebuilding-slack-com/"
+                    target="_blank"
+                    >Rebuilding slack.com</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://www.bgit.rs/blog/zasto-bootcamp-format/"
+                    target="_blank"
+                    >Zašto bootcamp format?</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://www.bgit.rs/blog/react-prozor-u-svet-web-aplikacija/"
+                    target="_blank"
+                    >React - prozor u svet web <br />
+                    aplikacija</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://www.netokracija.rs/najvece-zablude-o-programerima-134757"
+                    target="_blank"
+                    >Najveće zablude o <br />
+                    programerima u Srbiji</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-4">
+            <div
+              class="d-flex align-items-center justify-content-center bg-warning text-light"
+              style="height: 200px"
+            >
+              <p>300 x 200</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="col-4">
+            <div
+              class="d-flex align-items-center justify-content-center bg-success text-light"
+              style="height: 200px"
+            >
+              <p>300 x 200</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="col-4">
+            <div
+              class="d-flex align-items-center justify-content-center bg-danger text-light"
+              style="height: 200px"
+            >
+              <p>300 x 200</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-4">
+            <div
+              class="d-flex align-items-center justify-content-center bg-dark text-light"
+              style="height: 200px"
+            >
+              <p>300 x 200</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="col-4">
+            <div
+              class="d-flex align-items-center justify-content-center bg-warning text-light"
+              style="height: 200px"
+            >
+              <p>300 x 200</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="col-4">
+            <div
+              class="d-flex align-items-center justify-content-center bg-success text-light"
+              style="height: 200px"
+            >
+              <p>300 x 200</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="bg-dark text-light">
+      <p class="p-3"></p>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+</html>

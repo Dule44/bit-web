@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Wanted Poster</title>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <a style="margin-left: 500px" href="../posters/index.html"
+      >Back To Homepage</a
+    >
+    <br />
+    <br />
+
+    <form style="margin-left: 500px"  action="../posters/index.html" method="get">
+      <fieldset style="width: 50%">
+        <legend>Top headline</legend>
+        <div>
+          <label for="headline_text">
+            <span class="visuallyhidden">Headline</span> text:
+          </label>
+          <input type="text" name="headline_text" id="headline_text" />
+        </div>
+      </fieldset>
+
+      <br />
+      <br />
+
+      <fieldset style="width: 50%">
+        <legend>Images</legend>
+        <div>
+          <label for="headline_text">
+            <span class="visuallyhidden">Images</span> 1:
+            <input
+              type="file"
+              id="image_uploads"
+              name="image_uploads"
+              accept=".jpg, .jpeg, .png"
+              multiple
+            />
+            <br />
+            <span class="visuallyhidden">Images</span> 2:
+            <input
+              type="file"
+              id="image_uploads"
+              name="image_uploads"
+              accept=".jpg, .jpeg, .png"
+              multiple
+            />
+            <br />
+            <span class="visuallyhidden">Images</span> 3:
+            <input
+              type="file"
+              id="image_uploads"
+              name="image_uploads"
+              accept=".jpg, .jpeg, .png"
+              multiple
+            />
+            <br />
+          </label>
+        </div>
+      </fieldset>
+      <br />
+      <br />
+
+      <fieldset style="width: 50%">
+        <legend>Reward</legend>
+        <div>
+          <label for="reward_money">
+            <span class="visuallyhidden">Reward</span> money:
+          </label>
+          <input type="text" name="reward_money" id="reward_money" />
+        </div>
+      </fieldset>
+      <br />
+
+      <fieldset style="width: 50%">
+        <legend>Reward</legend>
+        <div>
+          <label for="aliases">
+            <span class="visuallyhidden">Aliases</span>:
+            <br />
+          </label>
+          <input type="text" name="aliases" id="aliases" />
+        </div>
+        <br />
+        <div>
+          <label for="birth">
+            <span class="visuallyhidden">Birth</span>:
+            <br />
+          </label>
+          <input type="text" name="birth" id="birth" />
+        </div>
+        <br />
+        <div>
+          <label for="heir">
+            <span class="visuallyhidden">Heir</span>:
+            <br />
+          </label>
+          <input type="text" name="heir" id="heir" />
+        </div>
+        <br />
+        <div>
+          <label for="eyes">
+            <span class="visuallyhidden">Eyes</span>:
+            <br />
+          </label>
+          <input type="text" name="eyes" id="eyes" />
+        </div>
+        <br />
+        <div>
+          <label for="height">
+            <span class="visuallyhidden">Height</span>:
+            <br />
+          </label>
+          <input type="text" name="height" id="height" />
+        </div>
+        <br />
+        <div>
+          <label for="weight">
+            <span class="visuallyhidden">Weight</span>:
+            <br />
+          </label>
+          <input type="text" name="weight" id="weight" />
+        </div>
+        <br />
+        <div>
+          <label for="sex">
+            <span class="visuallyhidden">Sex</span>:
+            <br />
+          </label>
+          <input type="text" name="sex" id="sex" />
+        </div>
+        <br />
+        <div>
+          <label for="id_number">
+            <span class="visuallyhidden">ID Number</span>:
+            <br />
+          </label>
+          <input type="text" name="id_number" id="id_number" />
+        </div>
+        <br />
+        <div>
+          <label for="occupation">
+            <span class="visuallyhidden">Occupation</span>:
+            <br />
+          </label>
+          <input type="text" name="occupation" id="occupation" />
+        </div>
+      </fieldset>
+      <br />
+      <fieldset style="width: 50%">
+        <legend>Remarks</legend>
+        <div>
+          <textarea
+            name=" comments"
+            cols="95"
+            rows="8"
+            placeholder="remarks text"
+          ></textarea>
+          <br />
+        </div>
+      </fieldset>
+      <br />
+      <fieldset style="width: 50%">
+        <legend>Caution</legend>
+        <div>
+          <textarea
+            name=" comments"
+            cols="95"
+            rows="8"
+            placeholder="remarks text"
+          ></textarea>
+          <br />
+        </div>
+      </fieldset>
+      <br />
+      <button type="reset">Reset</button>
+      <button type="create_poster">Create Poster</button>
+    </form>
+  </body>
+</html>
