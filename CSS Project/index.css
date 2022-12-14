@@ -83,6 +83,7 @@ p {
   text-transform: uppercase;
   font-weight: bold;
   color: white;
+  cursor: pointer;
 }
 
 .logo-orange {
