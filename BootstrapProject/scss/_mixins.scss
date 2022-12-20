@@ -1,0 +1,18 @@
+@mixin flexCenter($position1, $position2, $position3) {
+    display: flex;
+    justify-content: $position1;
+    text-align: $position2;
+    align-items: $position3;
+}
+
+@mixin nav-links {
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  @mixin title {
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  

@@ -1,0 +1,21 @@
+.contact {
+    .container {
+      max-width: 720px !important;
+    }
+  }
+  .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $color-grey;
+    padding-block-end: 1rem;
+    margin-block-end: 2rem;
+    font-weight: 700;
+  }
+  .btn-success {
+    background-color: $color-green;
+    border: none;
+    &:hover {
+      background-color: $color-blue;
+    }
+  }
+  

@@ -1,0 +1,60 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.mainhead {
+  background-color: $color-green;
+}
+
+.section-title {
+  @include title;
+}
+
+.star {
+  @include flexCenter(center, center, center);
+  margin-block-end: 0.75rem;
+}
+.star-line {
+  display: inline-block;
+  width: 80px;
+  height: 0;
+  border: 2px solid $color-white;
+  margin-inline: 7px;
+  &--two {
+    border-color: #000;
+  }
+}
+
+.about {
+  background-color: $color-green;
+  .container {
+    max-width: 720px !important;
+  }
+}
+.get-more {
+  &:hover {
+    background-color: $color-blue;
+  }
+}
+footer {
+  background-color: $color-blue;
+  ul {
+    list-style-type: none;
+    li {
+      padding-inline: 0.25rem;
+    }
+    a {
+      display: inline-block;
+      color: $color-white;
+      padding: 0.5rem;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $color-white;
+      border-radius: 100%;
+      &:hover {
+        color: $color-green;
+        border-color: $color-blue;
+      }
+    }
+  }
+}

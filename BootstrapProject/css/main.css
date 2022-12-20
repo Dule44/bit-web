@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Red+Hat+Display:wght@400;500;700&display=swap");
+.contact .container {
+  max-width: 720px !important;
+}
+
+.form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid gray;
+  padding-block-end: 1rem;
+  margin-block-end: 2rem;
+  font-weight: 700;
+}
+
+.btn-success {
+  background-color: #18bc9c;
+  border: none;
+}
+.btn-success:hover {
+  background-color: #2c3e50;
+}
+
+.navbar {
+  background-color: #2c3e50;
+}
+.navbar-brand {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.navbar-brand:hover {
+  color: #18bc9c;
+}
+.navbar-toggler {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  border-color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.nav-link:hover {
+  color: #18bc9c;
+}
+.nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.collapsed {
+  background-color: #18bc9c;
+  border: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.mainhead {
+  background-color: #18bc9c;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-block-end: 0.75rem;
+}
+
+.star-line {
+  display: inline-block;
+  width: 80px;
+  height: 0;
+  border: 2px solid #fff;
+  margin-inline: 7px;
+}
+.star-line--two {
+  border-color: #000;
+}
+
+.about {
+  background-color: #18bc9c;
+}
+.about .container {
+  max-width: 720px !important;
+}
+
+.get-more:hover {
+  background-color: #2c3e50;
+}
+
+footer {
+  background-color: #2c3e50;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  padding-inline: 0.25rem;
+}
+footer ul a {
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+}
+footer ul a:hover {
+  color: #18bc9c;
+  border-color: #2c3e50;
+}
+
+.portfolio img {
+  margin-block-end: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
