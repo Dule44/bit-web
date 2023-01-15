@@ -1,0 +1,11 @@
+.main{
+    justify-content: space-around;
+    background-color: rgb(13, 62, 108);
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.red-border{
+    border:2px solid red;
+}
+
