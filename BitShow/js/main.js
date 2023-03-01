@@ -1,3 +1,8 @@
+import Shows from './models/display_shows.js';
+import Creatshows from './models/create_shows.js';
+import search from './search.js';
+
+
 // creating new obj of shows
 
 const newShow = new Shows();
@@ -45,3 +50,4 @@ function loadShow() {
 }
 
 loadShow();
+search();

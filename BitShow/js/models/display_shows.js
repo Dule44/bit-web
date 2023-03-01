@@ -1,6 +1,6 @@
 // displaying  shows on html
 
-class Shows {
+export default class Shows {
   constructor() {
     this.showList = [];
   };

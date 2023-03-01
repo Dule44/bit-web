@@ -1,6 +1,6 @@
 // creating shows
 
-class Creatshows {
+export default class Creatshows {
   constructor(id, img, showName, rating) {
     this.id = id;
     this.img = img;

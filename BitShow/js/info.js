@@ -1,7 +1,8 @@
+import search from './search.js';
+
 // handlers for page
 
 let showId = localStorage.getItem("id");
-let showRating = $("#showRating");
 let showTitle = $("#showTitle");
 let showInfo = $("#showInfo");
 let showImg = $("#showImg");
@@ -117,3 +118,4 @@ displayList();
 displayCast();
 displayCrew();
 displayAka();
+search();
