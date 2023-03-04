@@ -15,11 +15,9 @@ let showAka = $("#showAka");
 // display TVshow image and summary
 
 function displayShow() {
-  $.ajax({
-    url: `http://api.tvmaze.com/shows/${showId}`,
-    type: "GET",
-    dataType: "json",
-  }).done(function (response) {
+  fetch(`http://api.tvmaze.com/shows/${showId}`)
+    .then((response) => response.json())
+    .then((response) => {
     showTitle.append(
       `<p>${response.name} \u00A0\ ${response.rating.average} <span id="boot-icon" class="bi bi-star-fill"></span></p>`
     );
@@ -33,11 +31,9 @@ function displayShow() {
 // display shows season
 
 function displayList() {
-  $.ajax({
-    url: `http://api.tvmaze.com/shows/${showId}/seasons`,
-    type: "GET",
-    dataType: "json",
-  }).done(function (response) {
+  fetch(`http://api.tvmaze.com/shows/${showId}/seasons`)
+    .then((response) => response.json())
+    .then((response) => {
     numberSeason.text(`Seassons (${response.length})`);
 
     function dateFormat(date) {
@@ -60,11 +56,9 @@ function displayList() {
 // display show cast
 
 function displayCast() {
-  $.ajax({
-    url: `http://api.tvmaze.com/shows/${showId}/cast`,
-    type: "GET",
-    dataType: "json",
-  }).done(function (response) {
+  fetch(`http://api.tvmaze.com/shows/${showId}/cast`)
+    .then((response) => response.json())
+    .then((response) => {
     let counter = 0;
     response.forEach((el) => {
       if (counter < 12) {
@@ -78,11 +72,9 @@ function displayCast() {
 // display show crew
 
 function displayCrew() {
-  $.ajax({
-    url: `http://api.tvmaze.com/shows/${showId}/crew`,
-    type: "GET",
-    dataType: "json",
-  }).done(function (response) {
+  fetch(`http://api.tvmaze.com/shows/${showId}/crew`)
+    .then((response) => response.json())
+    .then((response) => {
     let counter = 0;
     response.forEach((el) => {
       if (counter < 10) {
@@ -99,11 +91,9 @@ function displayCrew() {
 // display show aka's
 
 function displayAka() {
-  $.ajax({
-    url: `http://api.tvmaze.com/shows/${showId}/akas`,
-    type: "GET",
-    dataType: "json",
-  }).done(function (response) {
+  fetch(`http://api.tvmaze.com/shows/${showId}/akas`)
+    .then((response) => response.json())
+    .then((response) => {
     response.forEach((el) => {
       let aka = el.country.name + ": " + el.name + "<br>";
       showAka.append(`<li>${aka}</li>`);

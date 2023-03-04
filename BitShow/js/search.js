@@ -5,11 +5,9 @@ export default function search() {
   $(".search").keyup(function () {
     let search = $(this).val();
     if (search !== "") {
-      $.ajax({
-        url: `http://api.tvmaze.com/search/shows?q=${search}`,
-        type: "GET",
-        dataType: "json",
-      }).done(function (response) {
+      fetch(`http://api.tvmaze.com/search/shows?q=${search}`)
+      .then((response) => response.json())
+      .then((response) => {
         let html = "";
 
         listSearch.empty();

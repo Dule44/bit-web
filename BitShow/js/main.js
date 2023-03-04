@@ -14,11 +14,9 @@ let mainSection = $("#mainSection");
 // getting data for html and display data
 
 function loadShow() {
-  $.ajax({
-    url: `http://api.tvmaze.com/shows`,
-    type: "GET",
-    dataType: "json",
-  }).done(function (response) {
+  fetch("http://api.tvmaze.com/shows")
+    .then((response) => response.json())
+    .then((response) => {
     const responCopy = [...response];
 
     let sortShows = responCopy.sort((a, b) => {
